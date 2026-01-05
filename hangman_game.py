@@ -901,23 +901,3 @@ def hangmanMenu():
 initDatabase()
 #starts program loop
 hangmanMenu()
-
-import tkinter as tk
- 
- 
-root = tk.Tk()
-
- 
-root.geometry("400x400")
-root.title("Pic")
-bg = tk.PhotoImage(file="./hangman_game/doofy.png")
-bg_label = tk.Label(root, image=bg)
-bg_label.place(x=0, y=0, relwidth=1, relheight=1)
-# Source - https://stackoverflow.com/a
-# Posted by Sarim, modified by community. See post 'Timeline' for change history
-# Retrieved 2025-12-18, License - CC BY-SA 3.0
-
-root.call('wm', 'attributes', '.', '-topmost', '1')
-
-tk.Toplevel(tk.mainloop())
- 
